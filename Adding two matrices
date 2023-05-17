@@ -1,0 +1,35 @@
+
+import java.util.*;
+class adding_two_matrices{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int cols,rows,i,j;
+        System.out.println("Enter the number of rows:");
+        rows=sc.nextInt();
+        System.out.println("Enter the number of columns:");
+        cols=sc.nextInt();
+        int [][] a1=new int[rows][cols];
+        int [][] a2=new int[rows][cols];
+        System.out.println("Enter the elements of first matrics:");
+        for(i=0;i< rows;i++){
+            for(j=0;j<cols;j++){
+                a1 [i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("Enter the elements of seconds matrics:");
+        for(i=0;i< rows;i++){
+            for(j=0;j<cols;j++){
+                a2 [i][j]=sc.nextInt();
+            }
+        }
+        int [][]  a3=new int[rows][cols];
+        for(i=0;i< rows;i++){
+            for(j=0;j<cols;j++){
+                a3 [i][j]=a1[i][j]+a2[i][j];
+                System.out.println(a3 [i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
